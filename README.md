@@ -84,4 +84,7 @@ or
 
 - Wait for your changes to be merged
 
-Hurray! You successfully made a contribution! 
+
+
+Hurray! You made your contribution!!
+Don't forget to star this repo if it was helpful to you!
