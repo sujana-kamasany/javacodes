@@ -12,7 +12,7 @@
 
 1. `Fork` this Repository 
 2. `Clone` it locally (Use github Desktop to make things easier)
-3.  or Do it locally using the command below 
+3.  or Do it locally using the commands below 
 
 
 ## How to clone repo and make changes locally
