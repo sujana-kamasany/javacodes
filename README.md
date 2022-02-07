@@ -1,5 +1,5 @@
 # Java Programs 
-# A Repository that will help you in making your first contribution.
+# A Repository that will guide you in making your first contribution.
 
 
 ## How to contribute
