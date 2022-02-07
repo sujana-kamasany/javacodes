@@ -40,7 +40,7 @@
 ```
 - Create a new folder and submit your java code
 
--- Stage your changes
+- Stage your changes
 
 ```
   git add yourprogramname.java
