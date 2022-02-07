@@ -43,7 +43,7 @@
 -- Stage your changes
 
 ```
-  git add index.html
+  git add yourprogramname.java
 ```
 
 or
@@ -55,7 +55,7 @@ or
 - Commit the changes
 
 ```
-  git commit -m "Add <your-github-username>"
+  git commit -m "Add <your-Java_program >"
 ```
 
 - Check the status of your repository
