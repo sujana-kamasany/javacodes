@@ -80,6 +80,7 @@ or
 
 - Navigate to your fork, on the top of the files section you'll notice a new section containing, a contribute button!
 - Click on the contribute button, it will open a drop down, click the pull request button on the drop down
+  
   Note: A pull request allows your changes to be merged with the original project.
 
 - Wait for your changes to be merged
