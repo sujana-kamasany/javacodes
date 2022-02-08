@@ -18,7 +18,7 @@ public class AddInteger {
         int numberTwo = reader.nextInt();
 
         // Declaring a variable to hold the sum of two integers
-        int result = numberOne + numberTwo;
+        long result = numberOne + numberTwo;
 
         // println() prints the result  to the output screen
         System.out.println("Total is: " + result);
