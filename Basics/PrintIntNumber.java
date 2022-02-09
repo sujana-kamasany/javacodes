@@ -1,7 +1,8 @@
+package JavaTut;
+
 import java.util.Scanner;
 
-public class HelloWorld {
-
+public class PrintIntNumber {
     public static void main(String[] args) {
 
         // Creates a reader instance which takes
