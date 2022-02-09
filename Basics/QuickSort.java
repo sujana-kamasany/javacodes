@@ -38,14 +38,14 @@ public class QuickSort {
 
 class Main {
     public static void main(String[] args) {
-        int[] unsortedArray = {1, 7, 3, -56, 78, 0, 7, 3, 34, -42};
-        int n = unsortedArray.length;
+        int[] arr = {1, 7, 3, -56, 78, 0, 7, 3, 34, -42};
+        int n = arr.length;
         //Print unsorted array
-        System.out.println("Unsorted Array: " + Arrays.toString(unsortedArray));
+        System.out.println("Unsorted Array: " + Arrays.toString(arr));
         //Use QuickSort
         QuickSort obj = new QuickSort();
-        obj.quick_sort(unsortedArray, 0, n - 1);
+        obj.quick_sort(arr, 0, n - 1);
         //Print sorted array
-        System.out.println("Sorted Array: " + Arrays.toString(unsortedArray));
+        System.out.println("Sorted Array: " + Arrays.toString(arr));
     }
 }
