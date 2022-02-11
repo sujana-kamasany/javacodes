@@ -1,38 +1,47 @@
-package JavaTut;
-
 import java.util.Arrays;
 
-public class BubbleSort {
-    //Bubble Sort Algorithm (optimised) Time Complexity: 0(n*n)
-    void bubble_Sort(int[] arr) {
-        int n = arr.length;
-        boolean swapped;
+//Bubble Sort Algorithm (Generic)
+public class BubbleSort<T extends Comparable<? super T>> {
+    T[] array;
 
-        for (int i = 0; i < n - 1; i++) {
-            swapped = false;
-            for (int j = 0; j < n - i - 1; j++) {
-                if (arr[j] > arr[j + 1]) {
-                    //Swap arr[j+1] and arr[j]
-                    int temp = arr[j];
-                    arr[j] = arr[j + 1];
-                    arr[j + 1] = temp;
-                    swapped = true;
+    BubbleSort(T[] array) {
+        this.array = array;
+    }
+
+    private void bubbleSort() {
+        for (int i = 0; i < array.length - 1; i++) {
+            for (int j = 0; j < array.length - i - 1; j++) {
+                if (array[j].compareTo(array[j + 1]) > 0) {
+                    swapElements(j, array);
                 }
             }
-            //IF no two elements are swapped by inner loop, then break
-            if (!swapped)
-                break;
         }
     }
 
+    private void swapElements(int index, T[] arr) {
+        T temp = arr[index];
+        arr[index] = arr[index + 1];
+        arr[index + 1] = temp;
+    }
+
     public static void main(String[] args) {
-        int[] arr = {1, 7, 3, -56, 78, 0, 7, 3, 34, -42};
+        //EXAMPLE Type Int
+        Integer[] intArr = {1, 2, 7, 3, -56, 78, 0, 7, 3, 34, -42};
         //Print unsorted array
-        System.out.println("Unsorted Array: " + Arrays.toString(arr));
+        System.out.println("Unsorted Array: " + Arrays.toString(intArr));
         //Use Bubble Sort
-        BubbleSort obj = new BubbleSort();
-        obj.bubble_Sort(arr);
+        BubbleSort<Integer> obj = new BubbleSort<>(intArr);
+        obj.bubbleSort();
         //Print sorted array
-        System.out.println("Sorted array: " + Arrays.toString(arr));
+        System.out.println("Sorted array: " + Arrays.toString(intArr));
+
+        //EXAMPLE Type String
+        String[] strArr = {"Mate", "Awais", "Eduardo", "Thierry", "Bence"};
+        System.out.println("Unsorted Array: " + Arrays.toString(strArr));
+        //Use Bubble Sort
+        BubbleSort<String> obj1 = new BubbleSort<>(strArr);
+        obj1.bubbleSort();
+        //Print sorted array
+        System.out.println("Sorted array: " + Arrays.toString(strArr));
     }
 }
