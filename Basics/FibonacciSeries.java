@@ -1,42 +1,32 @@
-import java.util.HashMap;
+package Basics;
 
+import java.util.InputMismatchException;
+import java.util.Scanner;
 
 public class FibonacciSeries {
-    private static HashMap<Integer, Long> memo = new HashMap<>();
+	public static void main(String[] args) {
 
-    public static void main(String[] args) {
-        //0, 1, 2, 3, 4, 5, 6,  7,  8,  9, 10,
-        //0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, ...
+		Scanner input = new Scanner(System.in);
+		System.out.print("Enter terms n of Fibonacci Series : ");
+		int n = 0;
+		try {
+			n = input.nextInt();
+		} catch (InputMismatchException e) {
+			System.out.println("n : must be integer over 2");
+		}
 
-        System.out.println();
-        System.out.println(fibMemo(1000));
+		int[] series = new int[n];
+		series[0] = 1; series[1] = 1;
+		printFibonacciNumber(series[0]);
+		printFibonacciNumber(series[1]);
 
-    }
+		for (int i = 2; i < n; i++) {
+			series[i] = series[i - 1] + series[i - 2];
+			printFibonacciNumber(series[i]);
+		} }
 
-    // solving the problem recursively
-    private static long fib(int num) {
-        //case number was zero the Fibonacci number is 0
-        if (num == 0L) return 0L;
-            //case number is 1 or 2 the Fibonacci number is 1 for both cases
-        else if (num == 1L || num == 2L) return 1;
-        // solving the problem recursively
-        return fib(num - 1) + fib(num - 2);
-    }
+	private static void printFibonacciNumber(int num) {
+		System.out.print(num + " ");
+	}
 
-    // solving the problem recursively with the use of memo to save run time
-    private static long fibMemo(int num) {
-        //case number was zero the Fibonacci number is 0
-        if (num == 0) return 0L;
-            //case number is 1 or 2 the Fibonacci number is 1 for both cases
-        else if (num == 1 || num == 2) return 1;
-            // if the HashMap have the result already return the resilt
-            //else calculate it and store it in the HashMap
-        else if (memo.containsKey(num)) return memo.get(num);
-        else {
-            long result = fibMemo(num - 1) + fibMemo(num - 2);
-            memo.put(num, result);
-            return result;
-        }
-
-    }
 }
