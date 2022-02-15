@@ -9,8 +9,10 @@ public class FibonacciSeries {
 		Scanner input = new Scanner(System.in);
 		System.out.print("Enter terms n of Fibonacci Series : ");
 		int n = 0;
+
 		try {
 			n = input.nextInt();
+			validInputNum(n);
 		} catch (InputMismatchException e) {
 			System.out.println("n : must be integer over 2");
 		}
@@ -27,6 +29,12 @@ public class FibonacciSeries {
 
 	private static void printFibonacciNumber(int num) {
 		System.out.print(num + " ");
+	}
+
+	private static void validInputNum(int userInput) throws InputMismatchException {
+		if (userInput < 2) {
+			throw new InputMismatchException();
+		}
 	}
 
 }
