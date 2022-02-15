@@ -1,5 +1,6 @@
 package Basics;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 /**
@@ -20,7 +21,12 @@ public class PascalTriangle {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		System.out.print("Enter a pascal line : ");
-		int level = input.nextInt();
+		int level = 1;
+		try {
+			level = input.nextInt();
+		} catch (InputMismatchException e) {
+			System.out.println("Number must be integer more than 1");
+		}
 
 		int[][] triangle = new int[level][level];
 		triangle[0][0] = 1;
