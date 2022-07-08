@@ -1,4 +1,8 @@
-public class Armstrong {
+
+
+package Basics;
+
+ class Armstrong {
 
     public static void main(String[] args) {
 

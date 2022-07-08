@@ -1,4 +1,8 @@
-public class HashMapToList {
+
+package Basics;
+import java.util.*;
+
+ class HashMapToList {
 
     public static void main(String[] args) {
         HashMap<String, Integer> map = new HashMap<>();
