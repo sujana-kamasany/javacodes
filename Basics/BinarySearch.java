@@ -8,7 +8,7 @@
 
 class BinarySearch<T extends Comparable<? super T>> {
     // Returns index of x if it is present in arr[l..r], else return -1
-    int binarySearch(T arr[], int l, int r, T x)
+    int binarySearch(T arr[], int l, int r, T x )
     {
         if (r >= l) {
             int mid = l + (r - l) / 2;

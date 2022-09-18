@@ -1,4 +1,6 @@
- class LinkedList{
+
+package Basics;
+class LinkedList{
     protected Node head;
     protected Node tail;
 

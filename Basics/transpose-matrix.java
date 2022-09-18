@@ -1,4 +1,7 @@
-public class MatrixTransposeExample{  
+
+package Basics;
+
+ class MatrixTransposeExample{
 public static void main(String args[]){  
 //creating a matrix  
 int original[][]={{1,3,4},{2,4,3},{3,4,5}};    
