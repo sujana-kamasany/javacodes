@@ -1,4 +1,4 @@
-import java.util.Scanner;
+package Basics;
 
 class NeonNumber {
     public static void main(String[] args) {
