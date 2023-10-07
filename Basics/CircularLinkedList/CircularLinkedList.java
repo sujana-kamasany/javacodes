@@ -1,4 +1,4 @@
-package Basics.CircularLinkedList;
+package CircularLinkedList;
 
 public class CircularLinkedList<T> {
 	private ListNode<T> firstNode;

@@ -1,4 +1,4 @@
-package arrays;
+
 
 //it returns a two-dimensional array representing a table with sizes of the given parameters
 //a table contains numbers from 1 up to number received by multiplying number of rows and columns

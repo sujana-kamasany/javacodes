@@ -1,7 +1,7 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class ArrayTest {
+public class reverse {
   
   // method to reverse an array using another array
   public static int[] reverse(int[] realArr) {

@@ -1,4 +1,4 @@
-package Basics.CircularLinkedList;
+package CircularLinkedList;
 
 public class ListNode<T> {
 	private T data;

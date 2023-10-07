@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class CopyArray {
+public class mergearray {
 
    public static void main(String[] args) {
       
