@@ -1,6 +1,7 @@
+import java.util.*;
 class Solution {
     public List<Integer> selfDividingNumbers(int left, int right) {
-       final List<Integer> arr=new LinkedList();
+        final List<Integer> arr = new LinkedList();
         for(int i=left;i<=right;i++){
             if(valid(i)){
                 arr.add(i);

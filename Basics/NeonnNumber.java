@@ -1,13 +1,11 @@
-import java.util.Scanner;
-
-class NeonNumber {
+class NeonnNumber {
     public static void main(String[] args) {
         System.out.println("This code checks for neon number");
         if(args==null || args.length<1){
            System.out.println("Usage : java NeonNumber <inputNumber>");
            return;
         }
-        int n = args[0];
+        int n = Integer.parseInt(args[0]);
 
         int square = n * n;
         int sum = 0;
