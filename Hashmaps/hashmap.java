@@ -8,7 +8,7 @@ public class HashMapExample1{
    map.put(4,"Grapes");   
        
    System.out.println("Iterating Hashmap...");  
-   for(Map.Entry m : map.entrySet()){    
+   for(Map.Entry<Integer, String> m : map.entrySet()){    
     System.out.println(m.getKey()+" "+m.getValue());    
    }  
 }  
