@@ -49,6 +49,45 @@ public class CircularLinkedList {
             System.out.println();  
         }  
     }  
+
+    //Delete a particular node
+    public Node deleteNode(int valueToBeDeleted) {
+        //If list is empty
+        if(head == null) return null;
+
+        //if only one node present
+        if(tail.data == valueToBeDeleted && tail.next == tail) {
+            tail = null;
+            head = null;
+        }
+        Node temp = tail;
+        //if last node contains the value to be deleted
+        if(tail.data == valueToBeDeleted) {
+            //iterate till node before tail
+            while(temp.next != tail) {
+                temp = temp.next;
+            }
+
+            //point temp node to next of tail
+            temp.next = tail.next;
+            tail = temp.next;
+        }
+        //node to be deleted is inbetween
+        while(temp.next != tail && temp.next.data != valueToBeDeleted) {
+            temp = temp.next;
+        }
+        //when node to be deleted is found
+        if(temp.next.data == valueToBeDeleted) {
+            Node toBeDeleted = temp.next;
+            temp.next = toBeDeleted.next;
+        }
+        //if node to be deleted is first node
+        if(head.data == valueToBeDeleted) {
+            tail.next = head.next;
+            head = tail.next;
+        }
+        return tail;
+    }
   
     public static void main(String[] args) {  
         CreateList cl = new CreateList();  
