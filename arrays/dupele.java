@@ -1,5 +1,5 @@
 import java.util.Arrays;
-public class ArrayTest {
+public class dupele {
 
    public static void main(String[] args) {
       // sorted array

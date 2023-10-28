@@ -1,4 +1,4 @@
-package Basics.PetersonNumber;
+package PetersonNumber;
 
 import java.util.Scanner;
 
