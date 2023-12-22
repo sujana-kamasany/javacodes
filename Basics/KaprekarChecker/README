@@ -1,0 +1,7 @@
+# Kaprekar Number
+
+A Kaprekar number is a unique integer where its square can be split into two parts,
+and the sum of these parts equals the original number. The split is not fixed by digit
+ count, and the right part must be positive. For example, 45 is a Kaprekar number because
+ 45² = 2025, and 20 + 25 equals 45. This concept provides a fascinating insight   into
+ number theory.
